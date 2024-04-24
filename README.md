@@ -13,16 +13,16 @@ Then, we got the sentiment score of each date's headlines. This is important in 
 
 From the data, we also implemented our own statistics such as 7-day average, 30-day average, daily price returns (daily profit or loss) and 30-day volatility. 
 
-# 2. Exploratory data analysis
+# Exploratory data analysis
 We utilised various Exploratory Data Analysis Techniques such as box plot and scatter plot as taught in the course. We also learnt an interesting data visualisation tool: Word Cloud
 
-## a. Boxplot:
+## Boxplot:
 We visualised the distribution of sentiment scores, revealing that the majority of the data falls within a narrow range of 0.0 to 0.7, with an even tighter concentration between -0.15 and 0.2. Despite sentiment scores theoretically ranging from -1 to 1, this limited variability suggests a challenge in discerning extreme sentiments from the data. To normalize the data for further analysis, outliers were removed.
 
-## b. Scatter Plot:
+## Scatter Plot:
 Another EDA technique involved plotting sentiment scores against the average stock prices over both 7 and 30 days. Surprisingly, the correlation between sentiment and stock prices was found to be minimal, with a correlation coefficient of -0.06. This lack of correlation was consistent regardless of whether analysing shorter-term (7-day) or longer-term (30-day) stock movements.
 
-## c. Word Cloud:
+## Word Cloud:
 To gain insights into the textual content of headlines and its potential impact on sentiment, we employed word cloud visualisation. This method provides a visual representation of word frequency and importance within the headlines. Words appearing more frequently are depicted with larger sizes, offering a glimpse into the prevailing themes and sentiments conveyed in the headlines.
 
 These EDA techniques collectively aimed to uncover patterns and relationships within the data, facilitating a deeper understanding of the dynamics between news sentiment and stock market movements.
@@ -33,7 +33,14 @@ we also our sentiment_score values derived from DataCleaning.ipynb. We used a de
 
 Going forward, we decided to use TF-IDF (Term Frequency-Induced Document Frequency) as a measure to evaluate the words in the document. Firstly, we used TF-IDF with n-grams (n words per sequence) in a Logistic Regression model. Then, we also tried using Random Forest and Gradient Boosting to predict the stock market movement.
 
-The results show that the stock market is influenced by numerous factors, such as politics and policies, global events, investor psychology, market speculation, etc. This highlights the complexity of financial markets. While the project did not yield the desired predictive success, it provided valuable insights into the interplay between news sentiment and market behavior, paving the way for further research using more diverse data sources and advanced modeling techniques. Furthermore, we were able to learn and explore the growing field of Natural Language Processing.
+# Conclusion
+The results show that it is extremely hard to predict the stock market solely based off of news headlines. This is because the stock market is influenced by numerous factors, such as politics and policies, global events, investor psychology, market speculation, etc. While news headlines may cover some of these information, it is not able to capture the complexity and nuances, as well as the volume of information. This highlights the complexity of financial markets. While predicting stock prices may be possible, we must rely on more factors rather than looking only at news headlines.
+
+## Learning outcomes
+While the project did not yield the desired predictive success, it provided valuable insights into the interplay between news sentiment and market behavior, paving the way for further research using more diverse data sources and advanced modeling techniques. Furthermore, we were able to learn and explore the growing field of Natural Language Processing.
+Learnt different models and methods to improving the accuracy of a prediction based on a given dataset 
+Application of Word Clouds, Random Forest, Gradient Boosting, Term Frequency-Inverse Document Frequency
+
 
 # References
 
