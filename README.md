@@ -15,7 +15,8 @@ From the data, we also implemented our own statistics such as 7-day average, 30-
 We utilised various Exploratory Data Analysis Techniques
 
 3. Machine Learning
-We used multiple machine learning models to predict the stock market. Firstly, we attempted predicting the stock market using our sentiment_score values derived from DataCleaning.ipynb. We used a simple model to predict this, as well as a decision classification tree. This showed little promise in prediting stock prices.
+We used multiple machine learning models to predict the stock market. Firstly, we attempted predicting the stock market using word frequency, with our baseline model.
+we also our sentiment_score values derived from DataCleaning.ipynb. We used a decision classification tree. This showed little promise in prediting stock prices.
 
 Going forward, we decided to use TF-IDF (Term Frequency-Induced Document Frequency) as a measure to evaluate the words in the document. Firstly, we used TF-IDF with n-grams (n words per sequence) in a Logistic Regression model. Then, we also tried using Random Forest and Gradient Boosting to predict the stock market movement.
 
