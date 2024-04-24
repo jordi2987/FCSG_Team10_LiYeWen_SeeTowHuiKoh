@@ -1,8 +1,6 @@
-# dataSciProj
+# Data Science Project
 SC1015 mini project
-@Paxton2001
-@jordi2987
-@kohrenkai
+
 This project aims to predict the direction of stock market movement based on the top 25 news headlines daily. 
 
 The stock market is represented by the daily closing price of the Dow Jones Industrial Average (DJIA), one of the main indicators of the US economy.  The stock movement is denoted by 1, having increased or remained the same, where as 0 as having decreased from the previous day.
@@ -32,3 +30,13 @@ we also our sentiment_score values derived from DataCleaning.ipynb. We used a de
 Going forward, we decided to use TF-IDF (Term Frequency-Induced Document Frequency) as a measure to evaluate the words in the document. Firstly, we used TF-IDF with n-grams (n words per sequence) in a Logistic Regression model. Then, we also tried using Random Forest and Gradient Boosting to predict the stock market movement.
 
 The results show that the stock market is influenced by numerous factors, such as politics and policies, global events, investor psychology, market speculation, etc. This highlights the complexity of financial markets. While the project did not yield the desired predictive success, it provided valuable insights into the interplay between news sentiment and market behavior, paving the way for further research using more diverse data sources and advanced modeling techniques. Furthermore, we were able to learn and explore the growing field of Natural Language Processing.
+
+#references
+
+https://www.kaggle.com/datasets/aaron7sun/stocknews
+
+#Contributions
+Work divided equally among See Tow, Jordan and Ren Kai
+@Paxton2001
+@jordi2987
+@kohrenkai
